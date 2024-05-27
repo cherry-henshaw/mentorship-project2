@@ -4,7 +4,7 @@ let container = document.querySelector(".container");
 let todoList = document.querySelector(".todo-list");
 inputField.addEventListener("keydown", (event) =>{
   if (event.key === "Enter") {
-    let li = document.createElement('uli');
+    let li = document.createElement('li');
     li.innerText = inputField.value;
     li.classList.add("li");
     todoList.appendChild(li);
@@ -25,7 +25,7 @@ inputField.addEventListener("keydown", (event) =>{
     todoList.appendChild(newTime);
     
     let completeButton = document.createElement('button');
-    completeButton.innerText =  'Edit';
+    completeButton.innerText =  'Done';
     completeButton.classList.add("edit-btn");
     todoList.appendChild(completeButton);
 
